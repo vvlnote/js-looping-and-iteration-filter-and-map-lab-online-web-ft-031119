@@ -4,3 +4,11 @@ function driversWithRevenueOver(drivers, revenue){
     return driver.revenue > revenue;
   })
 }
+
+function driverNamesWithRevenueOver(drivers, revenue){
+  let list = [];
+  list = driversWithRevenueOver(drivers, revenue);
+  return list.map(function(item) {
+    return item.name;
+  })
+}

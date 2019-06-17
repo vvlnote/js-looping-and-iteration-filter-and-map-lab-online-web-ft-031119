@@ -23,6 +23,6 @@ function exactMatchToList(drivers, obj) {
   let list = [];
   list = exactMatch(drivers, obj);
   return list.map(function(item){
-    return item.anme;
+    return item.name;
   })
 }
